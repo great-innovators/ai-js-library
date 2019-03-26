@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>12345</title>
+        <script src="js.js"></script>
+    </head>
+    <body>
+            <form name="inputform" action="somewhere" method="post">
+                    <label>Name :</label>
+                    <input type="text" name="name" id="name" placeholder="Name" /><br/><br/>
+                    <label>Email :</label>
+                    <input type="text" name="email" id="email" placeholder="Valid Email" /><br/><br/>
+                    <input type="button" name="submit_id" id="btn_id" value="Submit by Id" />
+            </form>
+            <script>
+                BUTTONJONEL('btn_id').click(
+                    post={url:'php.php',param:'name=name&email=xx@yahoo.com'} //enter the value of inputs hir
+                );
+                
+            </script>
+    </body>
+</html>
